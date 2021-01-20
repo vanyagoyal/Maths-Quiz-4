@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Maths Quiz</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="head_div">
+            <div id="score_div">
+                <h4 id="p1_name"></h4><span id="p1_score"></span>
+                <br>
+                <h4 id="p2_name"></h4><span id="p2_score"></span>
+            </div>
+            <img src="Logo1.png">
+            <br>
+            <label style="color:white; font-size:30px;">Welcome To </label><br>
+        <label id="heading">The Maths Quiz</label>
+            <br>
+        </div>
+        <div id="body_div1">
+        <div class="container">
+            <h2 id="question_turn"></h2>
+            <h2 id="answer_turn"></h2>
+
+        <div id="output_div" class="col-lg-6"></div>
+        <br>
+        <h3 class="text-primary" style=" font-size:30px; font-weight: bold; font-family: 'Fraunces', serif;">Number 1</h3>
+        <input placeholder="Enter Number 1" id="no1" class="form-control" type="number">
+        <br>
+        <h3 class="text-primary" style=" font-size:30px; font-weight: bold; font-family: 'Fraunces', serif;">Number 2</h3>
+        <input placeholder="Enter Number 2" id="no2" class="form-control" type="number">
+        <br>
+        <button class="buttons" onclick="add()" id="btn_add">+</button>
+        <button class="buttons" onclick="subtract()" id="btn_sub">-</button>
+        <br>
+        <button class="buttons" onclick="multiply()" id="btn_m">*</button>
+        <button class="buttons" onclick="divide()" id="btn_div">/</button>
+        <br><br>
+        <button onclick="send()" id="send_btn()" style="background-color: navy; color:aquamarine; font-family:cursive; font-size:25px; border:3px  solid rgb(241, 68, 97);">Send</button>
+        </div>
+    </div>
+        <script src="game_page.js"></script>
+    </body>
+    </html>
